@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>My Application :p</title>
+
+    <style>
+        body{
+            margin: 0;
+            background-image: url("https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+            background-position: center;
+        }
+        #main_container {
+            padding: 10% 20% 10% 20%;
+        }
+
+        #app{
+            background-color: rgb(241, 241, 241);
+            padding: 5%;
+            border: 2px solid rgb(26, 99, 44);
+            border-radius: 25px;
+        }
+
+        .progressBar__container {
+            height: 50px;
+            background: rgb(83, 83, 83);
+        }
+
+        .progressBar__bar {
+            height: 50px;
+            width: 0%;
+            background: rgb(43, 43, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="app">
+
+            <h1>Dominik Malcharczyk</h1>
+            <p>S200532</p>
+            <button class="registerUser">Register user</button>
+            <button class="confirmAccount">Confirm Account</button>
+            <button class="loginUser">Login user</button>
+
+            <button class="listFiles">listFiles</button>
+            <div class="uploadFiles">
+                <input type="file" class="uploadFiles__input" multiple="true" />
+                <button class="uploadFiles__button">Upload files</button>
+                <div class="progressBar">
+                    <div class="progressBar__container">
+                        <div class="progressBar__bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/bundle.js"></script>
+
+</body>
+
+</html>
